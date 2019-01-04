@@ -1,0 +1,6 @@
+{{#if hasBlock}}
+  {{yield value}}
+{{else}}
+  <label>{{label}}</label>
+  <input type={{type}} value={{value}} onInput={{action (mut value) value="target.value"}}>
+{{/if}}

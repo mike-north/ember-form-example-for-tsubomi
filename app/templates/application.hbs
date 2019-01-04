@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{#x-form as |f|}}
+  {{f.txt value=email type="email" label="User Email"}}
+  {{f.txt value=email type="email" label="User Email"}}
+  {{#f.txt value=email type="email" as |v|}}
+    <label>
+      <img src="http://placecorgi.com/64/64" alt="">
+      a dog
+    </label>
+    <textarea value={{v}} onInput={{action (mut v) value='target.value'}}></textarea>
+  {{/f.txt}}
+  <div>
+    <select name="" id="">
+      <option value="1">abc</option>
+      <option value="1">abc</option>
+      <option value="1">abc</option>
+      <option value="1">abc</option>
+      <option value="1">abc</option>
+    </select>
+  </div>
+{{/x-form}}
