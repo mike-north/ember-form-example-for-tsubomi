@@ -1,12 +1,15 @@
 {{#x-form as |f|}}
   {{f.txt value=email type="email" label="User Email"}}
   {{f.txt value=email type="email" label="User Email"}}
+
+                                 <!--  function(v) {-->
   {{#f.txt value=email type="email" as |v|}}
     <label>
       <img src="http://placecorgi.com/64/64" alt="">
       a dog
     </label>
     <textarea value={{v}} onInput={{action (mut v) value='target.value'}}></textarea>
+                                     <!--  } -->
   {{/f.txt}}
   <div>
     <select name="" id="">

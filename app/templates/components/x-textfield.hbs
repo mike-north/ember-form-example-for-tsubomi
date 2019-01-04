@@ -1,5 +1,5 @@
 {{#if hasBlock}}
-  {{yield value}}
+  {{yield value}}  <!--  callback(value) -->
 {{else}}
   <label>{{label}}</label>
   <input type={{type}} value={{value}} onInput={{action (mut value) value="target.value"}}>
